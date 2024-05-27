@@ -13,7 +13,7 @@ namespace LogFilesProcessor
 
             string fileName = Path.GetFileNameWithoutExtension(sourceFile);
             string outputFilePrefix = $"{fileName}-";
-            int fileRecords = 20;
+            int fileRecords = 100;
 
             int partFileCount = Directory.GetFiles(partsDirectory, $"{fileName}-*.log").Length;
             int counter = partFileCount + 1;
